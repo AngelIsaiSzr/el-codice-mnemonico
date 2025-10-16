@@ -1,0 +1,57 @@
+{
+    "story_fragments": [
+        "En los anales del tiempo, cuando la memoria era sagrada, los archivistas guardaban secretos en sus mentes...",
+        "Los antiguos códices contenían más que palabras: contenían la esencia misma del conocimiento...",
+        "Cada símbolo cuenta una historia perdida, cada patrón revela una verdad olvidada...",
+        "La sabiduría se desvanece como la niebla al amanecer, pero puede ser restaurada...",
+        "Solo quien domina la memoria puede restaurar el códice y devolver el conocimiento al mundo...",
+        "En el palacio de la mente, donde los recuerdos se entrelazan como hilos de oro...",
+        "Los patrones del universo se reflejan en los patrones de la mente...",
+        "La memoria es el puente entre el pasado y el futuro, entre lo conocido y lo por descubrir...",
+        "Cada puzzle resuelto es un paso más cerca de la verdad...",
+        "El códice mnemónico espera ser completado por manos dignas..."
+    ],
+    "puzzle_descriptions": {
+        "simon_dice": "Reproduce la secuencia de símbolos que se muestra",
+        "patron_secuencia": "Encuentra el siguiente número en la secuencia lógica",
+        "memoria_espacial": "Recuerda la posición de los elementos en el espacio",
+        "logica_simbolos": "Resuelve el acertijo lógico usando símbolos",
+        "busqueda_patrones": "Encuentra el patrón oculto entre los elementos"
+    },
+    "anomaly_descriptions": {
+        "el_olvido": "Oscurece partes del tablero temporalmente",
+        "el_ruido": "Introduce información falsa o distractora",
+        "la_repeticion": "Obliga a resolver una versión más difícil de un puzzle completado"
+    },
+    "ability_descriptions": {
+        "palacio_mental": "Almacena información temporalmente en la interfaz",
+        "vision_periferica": "Amplía brevemente el campo de visión en puzzles de búsqueda",
+        "enfoque": "Ralentiza el tiempo por unos segundos"
+    },
+    "difficulty_levels": {
+        "1": {
+            "name": "Iniciante",
+            "description": "Perfecto para comenzar tu viaje",
+            "puzzle_count": 5,
+            "anomaly_chance": 0.1
+        },
+        "2": {
+            "name": "Aprendiz",
+            "description": "Los desafíos se intensifican",
+            "puzzle_count": 8,
+            "anomaly_chance": 0.2
+        },
+        "3": {
+            "name": "Experto",
+            "description": "Solo para los más hábiles",
+            "puzzle_count": 12,
+            "anomaly_chance": 0.3
+        },
+        "4": {
+            "name": "Maestro",
+            "description": "El desafío definitivo",
+            "puzzle_count": 15,
+            "anomaly_chance": 0.4
+        }
+    }
+}

@@ -1,0 +1,4 @@
+arcade==2.6.17
+numpy==1.24.3
+pymunk==6.5.2
+pillow==10.0.0
