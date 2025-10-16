@@ -42,7 +42,6 @@
 - **Python 3.7+**: Lenguaje principal
 - **Arcade 2.6+**: Framework de juegos 2D
 - **NumPy**: Cálculos matemáticos
-- **Pymunk**: Motor de físicas (para futuras extensiones)
 
 ### **Estructura del Proyecto**
 ```
@@ -109,7 +108,7 @@ python test_game.py
 
 ## 🔮 Extensiones Futuras
 
-### **Nuevos Tipos de Puzzles**
+### **Tipos de Puzzles**
 - Memoria Espacial: Recordar posiciones
 - Lógica de Símbolos: Acertijos lógicos
 - Búsqueda de Patrones: Encontrar patrones ocultos

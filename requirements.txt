@@ -1,4 +1,2 @@
-arcade==2.6.17
-numpy==1.24.3
-pymunk==6.5.2
-pillow==10.0.0
+arcade==2.6.17 # Asegura compatibilidad con Python 3.7+
+numpy==1.24.3 # Versión estable para cálculos matemáticos
