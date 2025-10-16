@@ -18,6 +18,9 @@ class GameWindow(arcade.Window):
         self.current_state = "menu"  # menu, gameplay, pause, game_over
         self.game_scene = None
         
+        # Guardado de progreso
+        self.saved_progress = None  # Guardará el estado del juego cuando se salga al menú
+        
         # Música de fondo
         self.background_music = None
         self.music_player = None
@@ -172,10 +175,28 @@ class GameWindow(arcade.Window):
         self.current_state = "menu"
         # TODO: Implementar menú principal
     
+    def save_progress(self):
+        """Guardar el progreso actual del juego"""
+        if self.game_scene:
+            self.saved_progress = self.game_scene
+            print("Progreso guardado")
+    
+    def return_to_menu(self):
+        """Volver al menú principal guardando el progreso"""
+        self.save_progress()
+        self.current_state = "menu"
+        self.game_scene = None  # Limpiar referencia para evitar conflictos
+    
     def setup_game(self):
         """Configurar la escena de juego"""
         self.current_state = "gameplay"
-        self.game_scene = GameScene(self.game_config)
+        if self.saved_progress:
+            # Restaurar progreso guardado
+            self.game_scene = self.saved_progress
+            print("Progreso restaurado")
+        else:
+            # Crear nueva partida
+            self.game_scene = GameScene(self.game_config)
     
     def on_draw(self):
         """Renderizar el frame actual"""

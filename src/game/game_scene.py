@@ -1215,9 +1215,13 @@ class GameScene:
     def return_to_main_menu(self):
         """Volver al menú principal"""
         try:
-            # Obtener referencia al game_window para cambiar estado
+            # Obtener referencia al game_window para usar el nuevo sistema de guardado
             window = arcade.get_window()
-            if hasattr(window, 'current_state'):
+            if hasattr(window, 'return_to_menu'):
+                window.return_to_menu()
+                print("Volviendo al menú principal con progreso guardado")
+            else:
+                # Fallback al método anterior
                 window.current_state = "menu"
                 print("Volviendo al menú principal")
         except Exception as e:
