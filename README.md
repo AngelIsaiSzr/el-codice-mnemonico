@@ -49,10 +49,8 @@
 ElCodiceMnemonico/
 ├── main.py                 # Punto de entrada
 ├── install.py              # Script de instalación
-├── test_game.py            # Pruebas del sistema
 ├── requirements.txt        # Dependencias
 ├── README.md              # Documentación principal
-├── TECHNICAL_DOCS.md      # Documentación técnica
 ├── src/                   # Código fuente
 │   ├── game/              # Lógica principal
 │   ├── puzzles/            # Implementación de puzzles
